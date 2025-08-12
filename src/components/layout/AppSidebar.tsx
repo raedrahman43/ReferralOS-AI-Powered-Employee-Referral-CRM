@@ -85,7 +85,7 @@ export function AppSidebar() {
                     >
                       <item.icon className="h-4 w-4 flex-shrink-0" />
                       {!collapsed && (
-                        <span className="text-sm font-medium">{item.title}</span>
+                        <span className="text-base font-semibold">{item.title}</span>
                       )}
                       {!collapsed && item.title === 'Finance' && (
                         <Badge variant="outline" className="ml-auto badge-warning">

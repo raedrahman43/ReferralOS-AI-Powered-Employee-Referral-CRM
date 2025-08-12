@@ -78,7 +78,7 @@ export function AppSidebar() {
                       className={({ isActive }) =>
                         cn(
                           "flex items-center gap-3 px-3 py-2 rounded-lg transition-colors",
-                          "hover:bg-muted text-foreground",
+                          "hover:bg-muted text-black",
                           isActive && "bg-primary text-primary-foreground hover:bg-primary/90"
                         )
                       }

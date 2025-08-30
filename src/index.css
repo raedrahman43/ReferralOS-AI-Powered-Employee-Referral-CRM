@@ -15,26 +15,26 @@
     --popover: 0 0% 100%;
     --popover-foreground: 215 27% 15%;
 
-    /* Brand Colors - Enterprise Blue Primary */
-    --primary: 217 91% 60%; /* #3B82F6 */
+    /* Premium Brand Colors - Deep Navy & Elegant Purple */
+    --primary: 224 71% 30%; /* Deep Navy #1E2A4E */
     --primary-foreground: 0 0% 100%;
-    --primary-hover: 217 91% 55%;
-    --primary-light: 217 91% 95%;
+    --primary-hover: 224 71% 25%;
+    --primary-light: 224 71% 96%;
 
-    /* Accent - Success Green */
-    --accent: 158 64% 52%; /* #10B981 */
+    /* Accent - Premium Purple */
+    --accent: 262 83% 58%; /* #8B5CF6 */
     --accent-foreground: 0 0% 100%;
-    --accent-light: 158 64% 95%;
+    --accent-light: 262 83% 96%;
 
-    /* Warning */
-    --warning: 38 92% 50%; /* #F59E0B */
+    /* Warning - Premium Gold */
+    --warning: 43 96% 56%; /* #F59E0B */
     --warning-foreground: 0 0% 100%;
-    --warning-light: 38 92% 95%;
+    --warning-light: 43 96% 96%;
 
-    /* Danger */
-    --destructive: 0 84% 60%; /* #EF4444 */
+    /* Danger - Premium Rose */
+    --destructive: 346 77% 49%; /* #E11D48 */
     --destructive-foreground: 0 0% 100%;
-    --destructive-light: 0 84% 95%;
+    --destructive-light: 346 77% 96%;
 
     /* Neutral System */
     --secondary: 215 20% 96%;
@@ -45,18 +45,21 @@
 
     --border: 215 20% 90%;
     --input: 215 20% 90%;
-    --ring: 217 91% 60%;
+    --ring: 224 71% 30%;
 
     /* Layout */
     --radius: 0.75rem;
-    --shadow-soft: 0 1px 3px 0 hsl(215 25% 15% / 0.1), 0 1px 2px 0 hsl(215 25% 15% / 0.06);
-    --shadow-medium: 0 4px 6px -1px hsl(215 25% 15% / 0.1), 0 2px 4px -1px hsl(215 25% 15% / 0.06);
-    --shadow-large: 0 10px 15px -3px hsl(215 25% 15% / 0.1), 0 4px 6px -2px hsl(215 25% 15% / 0.05);
+    --shadow-soft: 0 2px 8px 0 hsl(224 71% 30% / 0.08), 0 1px 3px 0 hsl(224 71% 30% / 0.04);
+    --shadow-medium: 0 8px 25px -5px hsl(224 71% 30% / 0.12), 0 4px 12px -2px hsl(224 71% 30% / 0.08);
+    --shadow-large: 0 20px 40px -12px hsl(224 71% 30% / 0.15), 0 8px 16px -4px hsl(224 71% 30% / 0.1);
+    --shadow-premium: 0 32px 64px -12px hsl(224 71% 30% / 0.2);
     
-    /* Gradients */
+    /* Premium Gradients */
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
-    --gradient-success: linear-gradient(135deg, hsl(var(--accent)), hsl(158 64% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(262 83% 50%));
     --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-premium: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 100%);
+    --gradient-glass: linear-gradient(135deg, hsla(var(--primary), 0.1) 0%, hsla(var(--accent), 0.05) 100%);
 
     --sidebar-background: 0 0% 98%;
 
@@ -76,41 +79,41 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 224 71% 4%;
+    --foreground: 224 40% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 224 71% 6%;
+    --card-foreground: 224 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 224 71% 6%;
+    --popover-foreground: 224 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 224 71% 4%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 224 71% 12%;
+    --secondary-foreground: 224 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 224 71% 12%;
+    --muted-foreground: 224 20% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 262 83% 58%;
+    --accent-foreground: 224 71% 4%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 346 77% 49%;
+    --destructive-foreground: 224 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 224 71% 15%;
+    --input: 224 71% 15%;
+    --ring: 262 83% 58%;
+    --sidebar-background: 224 71% 3%;
+    --sidebar-foreground: 224 40% 95%;
+    --sidebar-primary: 262 83% 58%;
+    --sidebar-primary-foreground: 224 71% 4%;
+    --sidebar-accent: 224 71% 8%;
+    --sidebar-accent-foreground: 224 40% 95%;
+    --sidebar-border: 224 71% 12%;
+    --sidebar-ring: 262 83% 58%;
   }
 }
 
@@ -130,8 +133,44 @@
     @apply bg-card border border-border rounded-2xl shadow-[var(--shadow-soft)];
   }
   
-  .card-elevated {
-    @apply bg-card border border-border rounded-2xl shadow-[var(--shadow-medium)];
+  /* Premium Card Variants */
+  .card-premium {
+    @apply bg-card border border-border rounded-2xl shadow-[var(--shadow-premium)] backdrop-blur-sm;
+  }
+  
+  .card-glass {
+    @apply bg-gradient-to-br from-background/80 to-muted/40 border border-border/50 rounded-2xl shadow-[var(--shadow-large)] backdrop-blur-lg;
+  }
+
+  /* Premium Button Variants */
+  .btn-premium {
+    @apply bg-[var(--gradient-premium)] text-white shadow-[var(--shadow-medium)] hover:shadow-[var(--shadow-large)] transition-all duration-300;
+  }
+
+  .btn-glass {
+    @apply bg-[var(--gradient-glass)] border border-primary/20 text-primary backdrop-blur-sm hover:bg-primary/10 transition-all duration-300;
+  }
+
+  /* Premium Status Badges */
+  .badge-premium {
+    @apply bg-[var(--gradient-premium)] text-white border-0 shadow-sm;
+  }
+
+  .badge-glass {
+    @apply bg-[var(--gradient-glass)] border border-primary/20 text-primary backdrop-blur-sm;
+  }
+
+  /* Premium Effects */
+  .glow-primary {
+    @apply shadow-[0_0_30px_hsl(var(--primary)/0.3)];
+  }
+  
+  .glow-accent {
+    @apply shadow-[0_0_30px_hsl(var(--accent)/0.3)];
+  }
+
+  .premium-border {
+    @apply border border-gradient-to-r from-primary/20 via-accent/20 to-primary/20;
   }
 
   /* Button Variants */
